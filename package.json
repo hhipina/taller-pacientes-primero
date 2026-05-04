@@ -1,0 +1,16 @@
+{
+  "name": "taller-pacientes-primero",
+  "version": "1.0.0",
+  "description": "Taller de Costos y Precios Hospitalarios | PACIENTES Primero",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
