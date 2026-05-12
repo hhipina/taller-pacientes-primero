@@ -652,5 +652,24 @@ function toggleFaq(btn){
   if(!isOpen){answer.classList.add('open');arrow.textContent='−';}
 }
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+
+  whatsappLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact', {
+          content_name: 'whatsapp_taller_costos_junio_2026',
+          content_category: 'Taller Costos y Precios Hospitalarios',
+          source: 'landing_taller'
+        });
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
